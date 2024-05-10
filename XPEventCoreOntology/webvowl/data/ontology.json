@@ -1,0 +1,1335 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://purl.org/faro", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://semanticweb.cs.vu.nl/2009/11/sem", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore" ],
+    "iri" : "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore#"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "65",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "2",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore#Event",
+    "baseIri" : "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "id" : "1",
+    "superClasses" : [ "4", "5" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Role",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "annotations" : {
+      "relatedMatch" : [ {
+        "identifier" : "relatedMatch",
+        "language" : "undefined",
+        "value" : "http://www.ontologyportal.org/translations/SUMO.owl.txt#IntentionalProcess",
+        "type" : "iri"
+      }, {
+        "identifier" : "relatedMatch",
+        "language" : "undefined",
+        "value" : "http://sw.opencyc.org/2009/04/07/concept/en/Role",
+        "type" : "iri"
+      }, {
+        "identifier" : "relatedMatch",
+        "language" : "undefined",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#region",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Role",
+      "undefined" : "Role"
+    },
+    "comment" : {
+      "undefined" : "Roles are properties with a subspecified function or position indicated by a RoleType in the scope of an Event. For example, the sem:hasActor property can be subspecified with the RoleType attacker, to denote that the type of participation of the Actor in the scope of the Event is \"attacker\". The sem:hasPlace property can be subspecified with the RoleType origin, to denote that within the scope of the Event it is the origin."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Temporary",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Temporary",
+      "undefined" : "Temporary"
+    },
+    "comment" : {
+      "undefined" : "Temporaries are properties that only hold during a certain Time, which is either indicated with the sem:hasTime property to an instance of sem:Time, or with the sem:hasTimeStamp property to some timestamp(s)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/RoleType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoleType",
+      "undefined" : "Role type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Roles, e.g. receiver."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/EventType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventType",
+      "undefined" : "Event type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Events, e.g. meeting."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/TimeType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeType",
+      "undefined" : "Time type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Time, e.g. century."
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/ActorType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActorType",
+      "undefined" : "Actor type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Actors, e.g. person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Object",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www.ontologyportal.org/translations/SUMO.owl.txt#Object",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#E21.Person",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#E19.Physical_Object",
+        "type" : "iri"
+      } ],
+      "broadMatch" : [ {
+        "identifier" : "broadMatch",
+        "language" : "undefined",
+        "value" : "http://sw.opencyc.org/2009/04/07/concept/en/SomethingExisting",
+        "type" : "iri"
+      }, {
+        "identifier" : "broadMatch",
+        "language" : "undefined",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant",
+        "type" : "iri"
+      } ],
+      "narrowMatch" : [ {
+        "identifier" : "narrowMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/c4dm/event.owl#Product",
+        "type" : "iri"
+      }, {
+        "identifier" : "narrowMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/c4dm/event.owl#Factor",
+        "type" : "iri"
+      }, {
+        "identifier" : "narrowMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/PhysicalResource",
+        "type" : "iri"
+      }, {
+        "identifier" : "narrowMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/dcmitype/PhysicalObject",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Object",
+      "undefined" : "Object"
+    },
+    "comment" : {
+      "undefined" : "Objects are passive, inanimate Actors."
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "57",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/faro/Event",
+    "baseIri" : "http://purl.org/faro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "58",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Core",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Core",
+      "undefined" : "Core"
+    },
+    "subClasses" : [ "43", "4", "40", "12" ],
+    "comment" : {
+      "undefined" : "The SEM Core class contains all entities that make up the context of an event: Events, Actors, Places, Times. This class is meant to be extended for each application domain."
+    },
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "36",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "65",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "2",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/View",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "View",
+      "undefined" : "View"
+    },
+    "comment" : {
+      "undefined" : "Views are properties that only hold according to a certain Authority."
+    },
+    "attributes" : [ "external" ],
+    "id" : "49",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Time",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "annotations" : {
+      "broadMatch" : [ {
+        "identifier" : "broadMatch",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2006/timeTemporalEntity",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Time",
+      "undefined" : "Time"
+    },
+    "comment" : {
+      "undefined" : "Time contains symbolic representations of when an Event took place. Time instances do not necessarily need to have a timestamp associated with them. The Time class exists to represent semantics of time, e.g. that one thing happens before another, even though the exact timestamps are unknown."
+    },
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Constraint",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Constraint",
+      "undefined" : "Constraint"
+    },
+    "subClasses" : [ "49", "8", "10" ],
+    "comment" : {
+      "undefined" : "The SEM Constraint class contains instances of properties that have a constrained (i.e. not universal) validity. This includes time dependent validity (Temporary), validity in the guise of a specific role (Role), or validity according to a given Authority (View)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Actor",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www.ontologyportal.org/translations/SUMO.owl.txt#Agent",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/AgentClass",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#E39.Actor",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://sw.opencyc.org/2009/04/07/concept/en/Agent-Generic",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/Agent",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "iri"
+      } ],
+      "broadMatch" : [ {
+        "identifier" : "broadMatch",
+        "language" : "undefined",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#endurant",
+        "type" : "iri"
+      }, {
+        "identifier" : "broadMatch",
+        "language" : "undefined",
+        "value" : "http://sw.opencyc.org/2009/04/07/concept/en/SomethingExisting",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Actor",
+      "undefined" : "Actor"
+    },
+    "subClasses" : [ "30" ],
+    "comment" : {
+      "undefined" : "Actors are entities that take part in an Event, either actively or passively. Actors do not necessarily have to be sentient. They can also be objects. Actors are a thing, animate or inanimate, physical or non-physical.\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "51", "13" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Event",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/dcmitype/Event",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://sw.opencyc.org/2009/04/07/concept/en/Situation",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#perdurant",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#E5.Event",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www.ontologyportal.org/translations/SUMO.owl.txt#Process",
+        "type" : "iri"
+      } ],
+      "broadMatch" : [ {
+        "identifier" : "broadMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/c4dm/event.owl#Event",
+        "type" : "iri"
+      }, {
+        "identifier" : "broadMatch",
+        "language" : "undefined",
+        "value" : "http://linkedevents.org/ontology/Event",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "subClasses" : [ "1" ],
+    "comment" : {
+      "undefined" : "Events are things that happen. This comprises everything from historical events to web site sessions and mythical journeys. Event is the central class of SEM."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Type",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#E55.Type",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#AbstractRegion",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Type",
+      "undefined" : "Type"
+    },
+    "subClasses" : [ "33", "20", "15", "26", "22" ],
+    "comment" : {
+      "undefined" : "The SEM Type class contains all types of Core instances. These can be either individuals of classes themselves. This class is meant to be extended for each application domain."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Place",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www8.informatik.uni-erlangen.de/IMMD8/Services/cidoc-crm/erlangen-crm_090330_5_0_1.owl#E53.Place",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/Location",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www.ontologyportal.org/translations/SUMO.owl.txt#GeographicArea",
+        "type" : "iri"
+      }, {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://sw.opencyc.org/2009/04/07/concept/en/EnduringThing-Localized",
+        "type" : "iri"
+      } ],
+      "narrowMatch" : [ {
+        "identifier" : "narrowMatch",
+        "language" : "undefined",
+        "value" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#PhysicalRegion",
+        "type" : "iri"
+      }, {
+        "identifier" : "narrowMatch",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Place",
+      "undefined" : "Place"
+    },
+    "comment" : {
+      "undefined" : "Places are locations where an Event happens. They do not need to be physical places and hence do not necessarily need coordinates. Neither do they need to have any significance apart from them being the location of an Event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/Authority",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Authority",
+      "undefined" : "Authority"
+    },
+    "subClasses" : [ "12" ],
+    "comment" : {
+      "undefined" : "Authorities are entities that state SEM properties. Their nature is not specified. They can symbolize people, organizations, sources of information, etc."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/PlaceType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlaceType",
+      "undefined" : "Place type"
+    },
+    "comment" : {
+      "undefined" : "EventType contains all resources that are used to classify Places, e.g. river."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore#caused_by",
+    "baseIri" : "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "caused_by"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Any event that has cause\nWhy"
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore#how_it_occurs",
+    "baseIri" : "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "how_it_occurs"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestBeginTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasEarliestBeginTimeStamp",
+      "undefined" : "has earliest begin timestamp"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Has earliest begin timestamp is used to indicate the earliest possible starting time of an uncertain time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "17"
+  }, {
+    "range" : "16",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "16",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasSubType",
+    "inverse" : "24",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasSubType",
+      "undefined" : "has subtype"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Has sub type is used to state that a type falls under another type. This is a generic aggregation relation that is used to generalize over various hierarchical relations that can exist between types."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "16",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasSubEvent",
+    "inverse" : "28",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "4",
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/c4dm/event.owl#sub_event",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSubEvent",
+      "undefined" : "has subevent"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Has subevent connects an Event to other Events that belong to it. This is a very generic property that does not mean the subevents fully define the superconcept or that there is any causal relationship."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "12",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "9",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "16",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasActor",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "12",
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://linkedevents.org/ontology/involved",
+        "type" : "iri"
+      } ],
+      "narrowMatch" : [ {
+        "identifier" : "narrowMatch",
+        "language" : "undefined",
+        "value" : "http://www.kulttuurisampo.fi/ebkr/agent",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasActor",
+      "undefined" : "has Actor\n\nIt answer to Who question."
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Has actor is used to state which Actors or Objects participate in an Event."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestBeginTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasLatestBeginTimeStamp",
+      "undefined" : "has latest begin timestamp"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Has latest begin timestamp is used to indicate the latest possible starting time of an uncertain time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/subEventOf",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "subEventOf",
+      "undefined" : "subevent of"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Inverse property of hasSubEvent"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/placeType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "placeType",
+      "undefined" : "has place type"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "40",
+    "comment" : {
+      "undefined" : "Has place type is used to assign a type to a place."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/timeType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "timeType",
+      "undefined" : "has time type"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Has time type is used to assign a type to a time individual."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "type"
+    },
+    "domain" : "7",
+    "subproperty" : [ "41" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "46",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://www.kulttuurisampo.fi/ebkr/time",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTimeStamp",
+      "undefined" : "has timestamp"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Has timestamp is used to put time indicators on any individual. It is the most common way to state when an Event took place. There are subproperties of hasTimeStamp to represent time intervals and uncertain time intervals. If the exact moment is not known, but it is necessary to specify a certain time, use hasTime instead. All of these properties are also used to indicate the time at which a property under the Temporary Constraint is valid."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/eventType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "eventType",
+      "undefined" : "has event type"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Has event type is used to assign a type to an event."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "9",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "51",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "51",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "5",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "51",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "51",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/actorType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "actorType",
+      "undefined" : "has actor type"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Has actor type is used to assign a type to an actor."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://purl.org/faro/causes",
+    "baseIri" : "http://purl.org/faro",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "causes"
+    },
+    "domain" : "7",
+    "subproperty" : [ "62" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/roleType",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "roleType",
+      "undefined" : "has role type"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Has role type is used to assign a role type to a Role property constraint. This role is a subspecification of the eventProperty which it constrains. For example, if an Event hasActor an Actor and this property is given a Role Constraint, then roleType can be used to assign a role to the participation of the Actor in the Event indicated by hasActor."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasLatestEndTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasLatestEndTimeStamp",
+      "undefined" : "has latest end timestamp"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Has latest end timestamp is used to indicate the latest possible ending time of an uncertain time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasEndTimeStamp",
+      "undefined" : "has end timestamp"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Has end timestamp is used to indicate the end of a time interval. Omitting the hasEndTimeStamp while stating a hasBeginTimeStamp is interpreted as an open ended interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore#causes",
+    "baseIri" : "https://www.irit.fr/recherches/MELODI/ontologies/xpEventCore",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "causes"
+    },
+    "superproperty" : [ "61" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "subClassOf"
+    },
+    "domain" : "7",
+    "subproperty" : [ "24" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasBeginTimeStamp",
+      "undefined" : "has begin timestamp"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Has begin timestamp is used to indicate the beginning of a time interval. Omitting the hasBeginTimeStamp while stating a hasEndTimeStamp is interpreted as an open ended interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/type",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "16",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/elements/1.1/type",
+        "type" : "iri"
+      } ],
+      "relatedMatch" : [ {
+        "identifier" : "relatedMatch",
+        "language" : "undefined",
+        "value" : "http://www.kulttuurisampo.fi/ebkr/quality",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "type",
+      "undefined" : "type property"
+    },
+    "superproperty" : [ "44" ],
+    "domain" : "65",
+    "subproperty" : [ "47", "67", "59", "39", "42" ],
+    "comment" : {
+      "undefined" : "Type is the super property of the properties that are used to indicate the type of a Core instance, eventType, actorType, placeType, timeType; and of roleType. Types can be both classes and individuals, cf. OWL 2 punning."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasTime",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "43",
+    "annotations" : {
+      "broadMatch" : [ {
+        "identifier" : "broadMatch",
+        "language" : "undefined",
+        "value" : "http://linkedevents.org/ontology/atTime",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTime",
+      "undefined" : "has Time\nIt answer to when question of event."
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "57",
+    "comment" : {
+      "undefined" : "Has time is used to indicate at which time an Event took place or when a property under the Temporary Constraint is valid. Has time points to a symbolic representation of time, which allows semantic relations between time resources. (see http://www.w3.org/TR/owl-time/)"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasEarliestEndTimeStamp",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasEarliestEndTimeStamp",
+      "undefined" : "has earliest end timestamp"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Has earliest end timestamp is used to indicate the earliest possible ending time of an uncertain time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "40",
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://www.kulttuurisampo.fi/ebkr/place",
+        "type" : "iri"
+      } ],
+      "narrowMatch" : [ {
+        "identifier" : "narrowMatch",
+        "language" : "undefined",
+        "value" : "http://linkedevents.org/ontology/inSpace",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPlace",
+      "undefined" : "has Place\nIt answers Where question, where does the event occured."
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "58",
+    "comment" : {
+      "undefined" : "Has place is used to state in which Place(s) an Event happened. Coordinates can be attached to the Place with the W3C Geospatial Vocabulary (http://www.w3.org/2005/Incubator/geo/XGR-geo-20071023/)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/eventProperty",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "eventProperty",
+      "undefined" : "event property"
+    },
+    "domain" : "7",
+    "subproperty" : [ "35", "0", "72", "74", "6", "27" ],
+    "comment" : {
+      "undefined" : "Event properties connect Events to other SEM Core entities."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/subTypeOf",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "subTypeOf",
+      "undefined" : "subtype of"
+    },
+    "superproperty" : [ "70" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The inverse property of hasSubType."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://semanticweb.cs.vu.nl/2009/11/sem/accordingTo",
+    "baseIri" : "http://semanticweb.cs.vu.nl/2009/11/sem",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "accordingTo",
+      "undefined" : "according to"
+    },
+    "domain" : "49",
+    "comment" : {
+      "undefined" : "According to is used to state which Authority sais that a property constrained by the View Constraint is true."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "75"
+  } ]
+}
