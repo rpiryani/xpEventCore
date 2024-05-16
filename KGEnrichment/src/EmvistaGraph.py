@@ -4,9 +4,9 @@ import argparse
 import os
 from tqdm import tqdm  # Import the tqdm module
 
-token = ""
-#pss_url = "https://pss-api.prevyo.com/pss/api/v2/rdf"  # Use this for RDF
-pss_url = "https://pss-api.prevyo.com/pss/api/v2/meaningrepresentation"  # Use this to get JSONs just like the ones you've been working with so far
+token = "##################"
+#pss_url = "##################"  # Use this for RDF
+pss_url = "##################"  # Use this to get JSONs just like the ones you've been working with so far
 
 def post(text):
     headers = {
