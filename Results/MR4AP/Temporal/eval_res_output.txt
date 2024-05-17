@@ -1,0 +1,199 @@
+data processed at evcbr_pp_emvista
+test using 5 similar cases, 3 coverage samples, sampling 8 paths from each case, with prevent inverse paths=False
+99 event types with more than 1 events in the dataset
+4.0 average cause-effect events for each cause event type
+number of inverses: 0, out of 324. 
+number of properties for each effect event - mean: 3.2727, med: 3.0
+====RESULTS===
+all predicates
+            	MRR  	H@1      	H@10      	H@100
+basic res  :	0.3394	h@1:0.3333	h@10:0.3519	h@100:0.3611
+refined res:	0.3274	h@1:0.3179	h@10:0.3395	h@100:0.3457
+bas+ref res:	0.3398	h@1:0.3302	h@10:0.3519	h@100:0.3611
+
+One limitation of the current method is that we frequently see no predictions being made for a given property because
+no good prediction paths being identified from similar cases.
+MRR for non-empty predictions: 0.7233 - (152 predictions made out of 324 test predictions)
+MRR for non-empty predictions, using the refinement method: 0.8222
+(129 predictions made out of 324 test predictions)
+
+========
+
+
+predicate breakdown (MR/MRR/H@1/H@10):
+http://semanticweb.cs.vu.nl/2009/11/sem/hasActor: 144 occurrences
+----
+24553.659722222223	0.0038320427608942668	0.0	0.013888888888888888
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/hasActor:nonzero predictions: 30 occurrences
+----
+1037.9666666666667	0.01827019585797851	0.0	0.06666666666666667
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/hasActor:rev: 144 occurrences
+----
+28030.32638888889	0.004581204549434503	0.0	0.013888888888888888
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/hasActor:rev:nonzero predictions: 13 occurrences
+----
+705.0	0.05041786029950264	0.0	0.15384615384615385
+----
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type: 106 occurrences
+----
+1.009433962264151	0.9952830188679245	0.9905660377358491	1.0
+----
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type:nonzero predictions: 106 occurrences
+----
+1.009433962264151	0.9952830188679245	0.9905660377358491	1.0
+----
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type:rev: 106 occurrences
+----
+1161.0566037735848	0.9528314161806783	0.9433962264150944	0.9622641509433962
+----
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type:rev:nonzero predictions: 102 occurrences
+----
+1.0196078431372548	0.9901960784313726	0.9803921568627451	1.0
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace: 37 occurrences
+----
+24264.37837837838	0.06329108122391254	0.05405405405405406	0.08108108108108109
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace:nonzero predictions: 8 occurrences
+----
+783.0	0.2926033338041775	0.25	0.375
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace:rev: 37 occurrences
+----
+25805.945945945947	0.06323623262355264	0.05405405405405406	0.08108108108108109
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace:rev:nonzero predictions: 6 occurrences
+----
+303.0	0.38978870244069147	0.3333333333333333	0.5
+----
+http://www.irit.fr/xpEvent/before: 25 occurrences
+----
+27190.96	0.00024300344143717	0.0	0.0
+----
+http://www.irit.fr/xpEvent/before:nonzero predictions: 3 occurrences
+----
+1150.0	0.0017864842334757772	0.0	0.0
+----
+http://www.irit.fr/xpEvent/before:rev: 25 occurrences
+----
+27158.84	0.0004886069870650489	0.0	0.0
+----
+http://www.irit.fr/xpEvent/before:rev:nonzero predictions: 3 occurrences
+----
+882.3333333333334	0.003833180447041435	0.0	0.0
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/actorType: 2 occurrences
+----
+4.5	0.25	0.0	1.0
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/actorType:nonzero predictions: 2 occurrences
+----
+4.5	0.25	0.0	1.0
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/actorType:rev: 2 occurrences
+----
+2.0	0.5	0.0	1.0
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/actorType:rev:nonzero predictions: 2 occurrences
+----
+2.0	0.5	0.0	1.0
+----
+http://www.irit.fr/xpEvent/has_consequence: 2 occurrences
+----
+30742.0	3.252878797735996e-05	0.0	0.0
+----
+http://www.irit.fr/xpEvent/has_consequence:nonzero predictions: 0 occurrences
+----
+0	0	0	0
+----
+http://www.irit.fr/xpEvent/has_consequence:rev: 2 occurrences
+----
+30742.0	3.252878797735996e-05	0.0	0.0
+----
+http://www.irit.fr/xpEvent/has_consequence:rev:nonzero predictions: 0 occurrences
+----
+0	0	0	0
+----
+http://www.irit.fr/xpEvent/opposition: 2 occurrences
+----
+30742.0	3.252878797735996e-05	0.0	0.0
+----
+http://www.irit.fr/xpEvent/opposition:nonzero predictions: 0 occurrences
+----
+0	0	0	0
+----
+http://www.irit.fr/xpEvent/opposition:rev: 2 occurrences
+----
+30742.0	3.252878797735996e-05	0.0	0.0
+----
+http://www.irit.fr/xpEvent/opposition:rev:nonzero predictions: 0 occurrences
+----
+0	0	0	0
+----
+http://www.irit.fr/xpEvent/compared_to: 2 occurrences
+----
+30742.0	3.252878797735996e-05	0.0	0.0
+----
+http://www.irit.fr/xpEvent/compared_to:nonzero predictions: 0 occurrences
+----
+0	0	0	0
+----
+http://www.irit.fr/xpEvent/compared_to:rev: 2 occurrences
+----
+30742.0	3.252878797735996e-05	0.0	0.0
+----
+http://www.irit.fr/xpEvent/compared_to:rev:nonzero predictions: 0 occurrences
+----
+0	0	0	0
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/eventType: 2 occurrences
+----
+10.0	0.5263157894736842	0.5	0.5
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/eventType:nonzero predictions: 2 occurrences
+----
+10.0	0.5263157894736842	0.5	0.5
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/eventType:rev: 2 occurrences
+----
+10.0	0.5263157894736842	0.5	0.5
+----
+http://semanticweb.cs.vu.nl/2009/11/sem/eventType:rev:nonzero predictions: 2 occurrences
+----
+10.0	0.5263157894736842	0.5	0.5
+----
+http://www.irit.fr/xpEvent/restriction: 1 occurrences
+----
+30742.0	3.252878797735996e-05	0.0	0.0
+----
+http://www.irit.fr/xpEvent/restriction:nonzero predictions: 0 occurrences
+----
+0	0	0	0
+----
+http://www.irit.fr/xpEvent/restriction:rev: 1 occurrences
+----
+30742.0	3.252878797735996e-05	0.0	0.0
+----
+http://www.irit.fr/xpEvent/restriction:rev:nonzero predictions: 0 occurrences
+----
+0	0	0	0
+----
+http://www.irit.fr/xpEvent/purpose: 1 occurrences
+----
+1050.0	0.0009523809523809524	0.0	0.0
+----
+http://www.irit.fr/xpEvent/purpose:nonzero predictions: 1 occurrences
+----
+1050.0	0.0009523809523809524	0.0	0.0
+----
+http://www.irit.fr/xpEvent/purpose:rev: 1 occurrences
+----
+283.0	0.0035335689045936395	0.0	0.0
+----
+http://www.irit.fr/xpEvent/purpose:rev:nonzero predictions: 1 occurrences
+----
+283.0	0.0035335689045936395	0.0	0.0
+----
