@@ -67,5 +67,8 @@ i) Creating dataset for EvCBR algorithm from EKG TTL file
     
          --n_paths determines how many prediction paths are sampled from each case.
 
-    iii) python .\experiments_evcbr/show_evcbr_eval_results.py --eval_res_dir EvCBR_dataset_results --data_dir EvCBR_dataset 
+    iii) python .\experiments_evcbr/show_evcbr_eval_results.py --eval_res_dir EvCBR_dataset_results --data_dir EvCBR_dataset
 
+# Classification of Wikidata properties in W's using chatgpt 
+To classify additional Wikidata properties in Ws, we used the chatgpt model. We collected all Wikidata properties metadata information from Wikidata endpoint4 using SPARQL and classified the properties into Ws using the gpt-3.5-turbo chatgpt model with the provided Prompt 1.
+![alt text](https://github.com/rpiryani/xpEventCore/blob/main/image/prompt.JPG?raw=true)
