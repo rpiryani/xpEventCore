@@ -14,7 +14,7 @@ path-based predictions without training by identifying similar occurrences using
 ### Steps to Run EvCBR on EKG
 i) Creating dataset for EvCBR algorithm from EKG TTL file 
 
-   python .\src\EvCBRDataCreation.py --data_dir data --input_dir dataset --input_kg query_results_new_rep_updated_disable_sameAs_01122023.ttl --WDT_HASEFFECT before --save_dir EvCBR_dataset 
+   python .\src\EvCBRDataCreation.py --data_dir data --input_dir dataset --input_kg EKG_without_reasoning.ttl --WDT_HASEFFECT before --save_dir EvCBR_dataset 
 
    Arguments: 
 
@@ -32,7 +32,7 @@ i) Creating dataset for EvCBR algorithm from EKG TTL file
 
          -- remove_similar_relation False
 
-      python .\src\EvCBRDataCreation.py --data_dir data --input_dir dataset --input_kg query_results_new_rep_updated_disable_sameAs_01122023.ttl --WDT_HASEFFECT before --save_dir EvCBR_dataset -- remove_similar_relation False
+      python .\src\EvCBRDataCreation.py --data_dir data --input_dir dataset --input_kg EKG_without_reasoning.ttl --WDT_HASEFFECT before --save_dir EvCBR_dataset -- remove_similar_relation False
 
    If you want to select the similar pair of cause_effect pair from different ontology then you need to pass two other parameters
 
@@ -40,7 +40,7 @@ i) Creating dataset for EvCBR algorithm from EKG TTL file
    
          --select_same_pair_test_connection dataset_from_new_representation/EvCBR_dataset_1/test_connections.txt
 
-      python .\src\EvCBRDataCreation.py --data_dir data --input_dir dataset --input_kg query_results_new_rep_updated_disable_sameAs_01122023.ttl --WDT_HASEFFECT before --save_dir EvCBR_dataset --select_same_pair_flag True --select_same_pair_test_connection dataset_from_new_representation/EvCBR_dataset_1/test_connections.txt
+      python .\src\EvCBRDataCreation.py --data_dir data --input_dir dataset --EKG_without_reasoning.ttl --WDT_HASEFFECT before --save_dir EvCBR_dataset --select_same_pair_flag True --select_same_pair_test_connection dataset_from_new_representation/EvCBR_dataset_1/test_connections.txt
 
 2)  Run EvCBR algorithm
 
@@ -48,7 +48,7 @@ i) Creating dataset for EvCBR algorithm from EKG TTL file
 
        Arguments:
 
-         --process_emvista: program is set for different dataset that used in paper "process_wiki", "process_fb", for our dataset "process_emvista"
+         --process_emvista: program is set for different dataset that used in paper "process_wiki", "process_fb", for our dataset it is "process_emvista"
     
          --emvista_input: EvCBR dataset directory name created in step 4
     
