@@ -4,10 +4,9 @@ import argparse
 import os
 from tqdm import tqdm  # Import the tqdm module
 
-token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwc3MiLCJ1c2VyTG9naW4iOiJyYWplc2gucGlyeWFuaUBpcml0LmZyIiwidXNlcklkIjo0MTEsIml0YSI6MTcwMTA3NTg0MzgyMiwicm9sZXMiOiJST0xFX1VTRVIifQ.AK59lE0VE8qWeMt3jtMex3anVYxpb7DMw9KRCv242FVz2XfSRkJ79fA14Bj6QuyR5FJzEQK9iWtdSvT1Sz5cSA"
-
-#pss_url = "https://pss-api.prevyo.com/pss/api/v2/rdf"  # Use this for RDF
-pss_url = "https://pss-api.prevyo.com/pss/api/v2/meaningrepresentation"  # Use this to get JSONs just like the ones you've been working with so far
+token = "##################"
+#pss_url = "##################"  # Use this for RDF
+pss_url = "##################"  # Use this to get JSONs just like the ones you've been working with so far
 
 def post(text):
     headers = {
