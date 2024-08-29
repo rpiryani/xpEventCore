@@ -72,3 +72,14 @@ i) Creating dataset for EvCBR algorithm from EKG TTL file
 # Classification of Wikidata properties in W's using chatgpt 
 To classify additional Wikidata properties in Ws, we used the chatgpt model. We collected all Wikidata properties metadata information from Wikidata endpoint4 using SPARQL and classified the properties into Ws using the gpt-3.5-turbo chatgpt model with the provided Prompt 1.
 ![alt text](https://github.com/rpiryani/xpEventCore/blob/main/image/prompt.JPG?raw=true)
+
+## Citation
+```bib
+@inproceedings{piryani2024ontology,
+  title={Ontology based Event Knowledge Graph enrichment using case based reasoning},
+  author={Piryani, Rajesh and Aussenac-Gilles, Nathalie and Hernandez, Nathalie Jane and Lopez, C{\'e}dric and Pradel, Camille},
+  booktitle={20th International Conference on Semantic Systems SEMANTICS 2024},
+  pages={1--18},
+  year={2024},
+  organization={IOS Press}
+}
